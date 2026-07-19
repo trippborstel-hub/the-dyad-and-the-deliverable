@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dyad and the Deliverable — Cheat Sheet</title>
+<style>
+  :root { --ink:#1e1e24; --accent:#0e6e5c; --rule:#d8d4cc; --dim:#6e6a62; --paper:#faf8f4; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:Georgia,'Times New Roman',serif; background:var(--paper); color:var(--ink); line-height:1.5; font-size:14px; }
+  .page { max-width:1060px; margin:0 auto; padding:40px 28px 64px; }
+  .masthead { border-bottom:3px double var(--ink); padding-bottom:16px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px; }
+  .masthead .over { font-family:Helvetica,Arial,sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  h1 { font-size:30px; font-weight:700; letter-spacing:-.4px; }
+  .note { font-family:Helvetica,Arial,sans-serif; font-size:11.5px; color:var(--dim); margin:10px 0 26px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .card { background:#fff; border:1px solid var(--rule); border-top:3px solid var(--accent); border-radius:0 0 8px 8px; padding:18px 20px 14px; break-inside:avoid; }
+  .card h2 { font-size:16px; font-family:Helvetica,Arial,sans-serif; margin-bottom:3px; }
+  .card h2 .no { color:var(--accent); margin-right:8px; font-size:12px; }
+  .card .core { font-style:italic; color:var(--accent); font-size:13.5px; margin-bottom:10px; }
+  ul { list-style:none; }
+  li { padding-left:16px; position:relative; margin-bottom:7px; font-size:13.3px; }
+  li::before { content:"—"; position:absolute; left:0; color:var(--accent); }
+  li b { font-weight:700; }
+  .quotes { grid-column:1 / -1; background:var(--ink); color:#e8e8ee; border:none; border-top:3px solid var(--accent); }
+  .quotes h2 { color:#fff; }
+  .quotes ul { columns:2; column-gap:34px; margin-top:8px; }
+  .quotes li { font-style:italic; color:#c9c9d2; break-inside:avoid; }
+  .quotes li::before { content:"“"; color:var(--accent); font-style:normal; }
+  @media (max-width:720px){ .grid{grid-template-columns:1fr;} .quotes ul{columns:1;} }
+  @media print { body{background:#fff; font-size:11px;} .page{padding:0; max-width:100%;} .card{page-break-inside:avoid;} }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="masthead">
+  <div>
+    <div class="over">Cheat Sheet</div>
+    <h1>The Dyad and the Deliverable</h1>
+  </div>
+  <div class="over">Key ideas, one glance</div>
+</div>
+<div class="note">Companion to the essay synthesizing Diego Espinosa's Kith Climate lectures (with Ben Hillier).
+Eight sections, eight core moves. Full essay: <b>trippborstel-hub.github.io/the-dyad-and-the-deliverable</b></div>
+
+<div class="grid">
+
+<div class="card">
+  <h2><span class="no">01</span>First, get in the car</h2>
+  <div class="core">The car tells you how to drive the car. You tell it where to go.</div>
+  <ul>
+    <li><b>Tolerance for ambiguity</b> is the entry-level mindset — nothing in AI is ironed out; treat the wobble as terrain.</li>
+    <li><b>Learning by raising the stakes:</b> a real deliverable, due Friday, before you know how. "I don't know how to do this" is the point.</li>
+    <li><b>A purpose unlocks critical thinking.</b> Deliverable-driven dialogue teaches collaboration; aimless chat teaches nothing.</li>
+    <li>Every mechanical question ("how do I…") → <b>ask the tool</b>. Destination, judgment, and worth → your department.</li>
+    <li>Empowerment test: the clerical work moves to the machine, the <b>steering moves to you</b>.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">02</span>The atomic unit</h2>
+  <div class="core">AI is not a model. It's a system by which humans get things done.</div>
+  <ul>
+    <li><b>Four components:</b> global inference (the model) + encoded local context (your data/methods) + computational environment (permissioned hands) + real-time human intelligence (you). Missing one = fooling around.</li>
+    <li>The model knows everything <b>except what you know</b>. Local context is the scarce input.</li>
+    <li>Why enterprises stall: smarter engines, still on the workbench — they bought inference and skipped the other three.</li>
+    <li><b>Prompt engineering is flat.</b> The leverage isn't the incantation; it's context + judgment + veto power. Good prompting = asking a very smart person an open-ended question.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">03</span>Your IP lives in markdown</h2>
+  <div class="core">The firm's intellectual property is a folder of .md files.</div>
+  <ul>
+    <li><b>CLAUDE.md</b> = standing orders, read every session. <b>Reference files</b> (1–3 pages, one per methodology) = encoded institutional knowledge.</li>
+    <li>Never hand-write them; generate through iteration. <b>Judge by output</b>, not by rereading.</li>
+    <li><b>Reference ↔ inference spectrum:</b> too little encoded → variance; too much → rigidity that strangles the intelligence. Find the middle empirically.</li>
+    <li>Pre-packaged skills = <b>reference files with training wheels</b>. The value is in the encoding experience, which can't be transferred.</li>
+    <li><b>Compounding:</b> every deliverable becomes data for the next inference. Deliverables are a balance sheet, not clutter.</li>
+    <li>Determinism spectrum for facts: model memory → cited web search → markdown/SQLite → database + AI-written retrieval code. <b>Move right as stakes rise.</b></li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">04</span>The number and the meaning</h2>
+  <div class="core">A number without financial context is a scoreboard. Connected to dollars, it's a finding.</div>
+  <ul>
+    <li>Comprehensiveness matters when stakeholders hold you to X→Y. Most value lives <b>between X and Y</b>: risk, premiums, multiples, covenants.</li>
+    <li>Carbon is <b>a placeholder for a process</b> — the inventory is step one of a risk exercise (TCFD's actual origin).</li>
+    <li><b>The trust ladder:</b> (1) model predicts the number → (2) model writes &amp; runs code → (3) code you own. Guessed and computed <i>look identical</i>. Only rung 3 survives an auditor.</li>
+    <li><b>Recalibrate your clock.</b> When execution collapses to minutes, the residual question is "what is the work, then?" Answer: partner judgment — what, why, for whom, worth what.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">05</span>Brilliant and stupid in the same conversation</h2>
+  <div class="core">Manage a colleague who is inconsistent at genius level.</div>
+  <ul>
+    <li><b>Don't over-specify.</b> Start broad, then narrow — micromanaged brilliance returns "but that's what you asked for."</li>
+    <li><b>Say less when correcting</b> ("I noticed the deck was incomplete") and let it self-diagnose; then encode the fix in a reference file. Its self-corrections are brilliant — interns' aren't.</li>
+    <li>Keep a long-lived <b>thinking session</b>; spin off disposable <b>doing sessions</b>. Archive ruthlessly.</li>
+    <li><b>AI indigestion:</b> volume tempts you to wave work through. Brief up a level — "plain English, one paragraph, the three things Sarah needs."</li>
+    <li><b>Polish seduces.</b> Beautiful output suppresses questioning; a wall of charts can be the opposite of rigor.</li>
+    <li>Ask <b>"how does it know that?"</b> Pattern-stitching and fabrication wear the same confidence. Entertain both, every time.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">06</span>It's not software</h2>
+  <div class="core">Fallible like a person, tireless like a machine — a third kind of thing.</div>
+  <ul>
+    <li>Forcing AI to behave like software is <b>2025 adoption</b> — a category error. Software is bug-fixed and certain; this is neither.</li>
+    <li><b>The harness</b> (memory + tools + autonomy) is currently worth more than the model. Test: is it <b>workflow-complete</b> — data in → reasoning → files out, loop closed?</li>
+    <li><b>Harness vs. app:</b> the harness is where experts work (open-ended, judgment-scoped); the app is what you leave behind (codified inputs/outputs anyone can run). "I don't trust AI — build me an app" → okay, AI will build the app.</li>
+    <li><b>Agents are Kleenex</b> — a paragraph of instructions plus plumbing, disposable. Write reference files; spawn agents as needed.</li>
+    <li>Use Claude to <b>make</b> Excel, not Claude <i>in</i> Excel. Whole aisles of the software store are training wheels now.</li>
+    <li><b>Adoption diagnostic:</b> have you ever been rate-limited? If not, try harder. Change spreads one demo at a time, from below.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">07</span>Make every figure testable</h2>
+  <div class="core">Assurance never certified exactness — it certifies method, reasonableness, documentation.</div>
+  <ul>
+    <li><b>Estimation was always the process.</b> AI doesn't contaminate a precise craft; the benchmark is documentation, not perfection.</li>
+    <li><b>Random error</b> washes out and spot-checks catch it. <b>Systematic bias</b> is the real threat: directional, recurring, accumulating.</li>
+    <li>Three bias loci: source data (not an AI problem) · orchestration (real but readable &amp; fixable) · <b>the weights</b> (the honest carve-out — and exactly where a good system concentrates tagging + human review).</li>
+    <li>"Agent B checks Agent A" is <b>not independence</b> — same priors. Independence = external referents: stored sources, versioned factor APIs, deterministic calcs.</li>
+    <li>Frame every QA pass as <b>find errors</b>, never "confirm correctness."</li>
+    <li><b>Provenance is a binding, not an assertion</b> — a checkable link to a stored source. Fabricated values have nothing to bind to: hallucination becomes a failed test, not a philosophy problem.</li>
+    <li><b>Pricing is the forcing function.</b> "Good enough to charge X for" makes quality real. Work doesn't disappear — it gets reorganized and repriced.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2><span class="no">08</span>The dyad</h2>
+  <div class="core">The system is not the AI. The system is both of you together.</div>
+  <ul>
+    <li>AI alone is <b>a tree falling in the forest</b> — value exists only through human judgment. One determinant of value in your context: <b>you</b>.</li>
+    <li>The model is the residual of our recorded patterns; it has <b>no skin in the game</b> — no stake, no pain, no "mattering." That's the stable human seat.</li>
+    <li><b>Users know things the builders don't.</b> Intensive operators of the dyad hold original knowledge — contribute it.</li>
+    <li><b>Variance is the evidence:</b> same assignment, same model, 28 different deliverables. The more difference, the more the human matters.</li>
+    <li>The scarcest resource in AI is <b>human imagination</b>. Use it freely.</li>
+    <li>Teacher's endgame: raise the stakes, hand over the keys, <b>make yourself progressively unnecessary</b>.</li>
+  </ul>
+</div>
+
+<div class="card quotes">
+  <h2>Lines worth keeping</h2>
+  <ul>
+    <li>The car will tell you how to drive the car. But you need to tell it where you want to go."</li>
+    <li>It can be brilliant and stupid in the same conversation."</li>
+    <li>Skills are reference files with training wheels."</li>
+    <li>All data is just data for Claude Code."</li>
+    <li>Guessed or computed — the answer looks the same either way."</li>
+    <li>What is the work, then?"</li>
+    <li>We have a great working relationship. Also, I'm the boss."</li>
+    <li>It's not software."</li>
+    <li>Agents are Kleenex."</li>
+    <li>Sensitive plus latitude equals silence."</li>
+    <li>If you haven't been rate-limited, try harder."</li>
+    <li>The dyad of the human and the AI is the system."</li>
+    <li>No one is going to hand it to you."</li>
+    <li>Use it freely. Use it freely."</li>
+  </ul>
+</div>
+
+</div>
+</div>
+</body>
+</html>
